@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  font-family: var(--ff-regular);
+}
+
+:root {
+  --clr-main-bg: #fff;
+  --clr-text: #000;
+  --clr-medium-light: #686868;
+  --clr-accent-light: #9900f8;
+  --clr-accent: #7d00c9;
+  --clr-underline: #83a4ff;
+  --clr-box-shadow: rgba(0, 0, 0, 0.25);
+
+  --ff-header: "Playfair Display", serif;
+  --ff-regular: "Roboto ", sans-serif;
+
+  --fs-hero-header: 48px;
+  --fs-header: 42px;
+  --fs-sub-header: 22px;
+  --fs-para: 18px;
+  --fs-regular: 14px;
+  --fs-icon: 36px;
+  --fs-small-icon: 24px;
+
+  --fw-200: 200;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fw-bolder: 900;
+
+  --gen-padding: 24px 40px;
+
+  --gen-transition: 0.2s ease-in-out;
+}
+
+
+.heading-box {
+  font-family: var(--ff-header);
+  font-size: var(--fs-header);
+  font-weight: var(--fw-bold);
+  position: absolute;
+  width: 40%;
+  padding: 75px 25px;
+  left: 5%;
+}
+.sub-heading {
+  font-family: var(--ff-header);
+  padding: 5px;
+  font-size: 35px;
+}
+.left-heading {
+  font-family: var(--ff-header);
+  color: var(--clr-accent);
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 828px;
+  position: relative;
+  margin: 12% 40%;
+}
+
+.carousel-box {
+  display: flex;
+}
+
+.carousel-text {
+  width: 100%;
+  padding: 0px 6px 0 98px;
+}
+
+.carousel-img {
+  display: block;
+  width: 37vw;
+}
+
+.carousel-heading {
+  color: var(--clr-accent);
+  font-family: var(--ff-header);
+  font-size: var(--fs-header);
+  font-weight: var(--fw-bold);
+}
+
+.carousel-subheading {
+  padding: 5px;
+  color: var(--clr-medium-light);
+  font-size: var(--fs-para);
+  font-weight: var(--fw-light);
+}
+
+.carousel-para {
+  padding: 7px;
+  margin: 17px;
+  position: relative;
+  right: 23px;
+  color: var(--clr-text);
+  font-size: var(--fs-para);
+  font-weight: var(--fw-light);
+}
+.right-image {
+  width: 300px;
+}
+
+/* Hide the images by default */
+.Slides {
+  display: none;
+  width: 48vw;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 20%;
+  width: auto;
+  margin-top: 41px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: gainsboro;
+}
+
+/* The dots/bullets/indicators */
+/* .dot-section {
+  text-align: center;
+  position: relative;
+  top: 20%;
+  margin-top: 31px;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+} */
+
+.active,
+.dot:hover {
+  background-color: var(--clr-medium-light);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

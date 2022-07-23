@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+
+}
+
+body {
+    font-family: var(--ff-regular);
+}
+
+:root {
+    --clr-main-bg: #fff;
+    --clr-text: #000;
+    --clr-medium-light: #686868;
+    --clr-accent-light: #9900f8;
+    --clr-accent: #7d00c9;
+    --clr-underline: #83a4ff;
+    --clr-box-shadow: rgba(0, 0, 0, 0.25);
+
+    --ff-header: 'Playfair Display', serif;
+    --ff-regular: 'Roboto ', sans-serif;
+
+    --fs-hero-header: 48px;
+    --fs-header: 42px;
+    --fs-sub-header: 22px;
+    --fs-para: 18px;
+    --fs-regular: 14px;
+    --fs-icon: 36px;
+    --fs-small-icon: 24px;
+
+    --fw-200: 200;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fw-bolder: 900;
+
+    --gen-padding: 24px 40px;
+
+    --gen-transition: 0.2s ease-in-out;
+}
+
+.navbar-codeaon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(#5427cf, #6f42c1);
+    padding: 25px 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+
+
+
+.codeaon-nav-heading {
+    padding: 10px 0;
+    font-family: var(--ff-header);
+    font-weight: bold;
+    margin-left: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.codeaon-nav-heading:hover {
+    cursor: pointer;
+}
+
+.codeaon-nav-list-items {
+    margin-right: 50px;
+}
+
+.navbar-codeaon li a {
+    padding: 3px 3px;
+    text-decoration: none;
+}
+
+
+.navbar-codeaon ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 3px;
+    font-family: var(--ff-regular);
+    line-height: 26px;
+}
+
+.codeaon-nav-list-items li a {
+    cursor: pointer;
+    color: whitesmoke;
+
+}
+
+
+
+.codeaon-nav-list-items :hover {
+    font-weight: bolder;
+    color: white;
+    font-weight: var(--fw-bold);
+    transition: var(--gen-transition);
+}
+
+.codeaon-navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.codeaon-navbar-btn {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.2rem;
+    border-radius: 4px;
+    margin-right: 3rem;
+    font-size: var(--fs-regular);
+    font-weight: var(--fw-bold);
+    color: #5427cf;
+    cursor: pointer;
+}
+
+.codeaon-navbar-signup {
+    margin-right: 5px;
+}

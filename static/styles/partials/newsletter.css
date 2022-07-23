@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+
+}
+
+body {
+    font-family: var(--ff-regular);
+}
+
+:root {
+    --clr-main-bg: #fff;
+    --clr-text: #000;
+    --clr-medium-light: #686868;
+    --clr-accent-light: #9900f8;
+    --clr-accent: #7d00c9;
+    --clr-underline: #83a4ff;
+    --clr-box-shadow: rgba(0, 0, 0, 0.25);
+
+    --ff-header: 'Playfair Display', serif;
+    --ff-regular: 'Roboto ', sans-serif;
+
+    --fs-hero-header: 48px;
+    --fs-header: 42px;
+    --fs-sub-header: 22px;
+    --fs-para: 18px;
+    --fs-regular: 14px;
+    --fs-icon: 36px;
+    --fs-small-icon: 24px;
+
+    --fw-200: 200;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fw-bolder: 900;
+
+    --gen-padding: 24px 40px;
+
+    --gen-transition: 0.2s ease-in-out;
+}
+
+.newsletter-container h3 {
+    color: #FFFFFF;
+    font-size: 51.2px;
+    font-family: var(--ff-header);
+}
+
+.newsletter-container p {
+    font-size: 22.4px;
+    width: 70%;
+    color: white;
+    font-family: var(--ff-regular);
+}
+
+.newsletter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(#5427cf, #6f42c1);
+    background-size: cover;
+    padding: 48px;
+    background-position: center center;
+
+}
+
+.newsletter-form {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.newsletter-email {
+    background: #fff;
+    width: 340px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    border-radius: 25px 0 0 25px;
+}
+
+.newsletter-submit {
+    position: relative;
+    left: -5px;
+    border-radius: 0 25px 25px 0;
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: pointer;
+    background: #e907d4;
+    color: #fff;
+
+}
+
+.newsletter-submit:hover {
+
+    cursor: pointer;
+
+}

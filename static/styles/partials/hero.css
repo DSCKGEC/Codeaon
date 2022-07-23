@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+
+}
+
+body {
+    font-family: var(--ff-regular);
+}
+
+:root {
+    --clr-main-bg: #fff;
+    --clr-text: #000;
+    --clr-medium-light: #686868;
+    --clr-accent-light: #9900f8;
+    --clr-accent: #7d00c9;
+    --clr-underline: #83a4ff;
+    --clr-box-shadow: rgba(0, 0, 0, 0.25);
+
+    --ff-header: 'Playfair Display', serif;
+    --ff-regular: 'Roboto ', sans-serif;
+
+    --fs-hero-header: 48px;
+    --fs-header: 42px;
+    --fs-sub-header: 22px;
+    --fs-para: 18px;
+    --fs-regular: 14px;
+    --fs-icon: 36px;
+    --fs-small-icon: 24px;
+
+    --fw-200: 200;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fw-bolder: 900;
+
+    --gen-padding: 24px 40px;
+
+    --gen-transition: 0.2s ease-in-out;
+
+    /* For hero section  */
+
+    --fs-hero-head: 2.5rem;
+    --fs-hero-desc: 1.5rem;
+    --fs-medium-light: #686868;
+    --color-text: #fff;
+
+    --primary-grad: #6f42c1;
+    --secondary-grad: #5427cf;
+}
+
+.hero-container {
+    padding-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px, 0;
+    flex-direction: row;
+    color: var(--color-text);
+    height: 100vh;
+}
+
+.hero-heading {
+    margin-bottom: 2rem;
+    font-family: 'Merriweather', serif;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-hero-head);
+
+}
+
+.hero-desc {
+    margin-bottom: 7rem;
+
+    font-size: var(--fs-hero-desc);
+
+}
+
+.hero-col-text {
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 8%;
+    margin-top: 7%;
+}
+
+
+
+.hero-col-img {
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.hero-image {
+    height: 550px;
+}
+
+.hero-container {
+    background-image: linear-gradient(160deg, var(--primary-grad)50%, var(--secondary-grad));
+
+}

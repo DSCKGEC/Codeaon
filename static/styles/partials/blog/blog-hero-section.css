@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+
+}
+
+body {
+    font-family: var(--ff-regular);
+}
+
+:root {
+    --clr-main-bg: #fff;
+    --clr-text: #000;
+    --clr-medium-light: #686868;
+    --clr-accent-light: #9900f8;
+    --clr-accent: #7d00c9;
+    --clr-underline: #83a4ff;
+    --clr-box-shadow: rgba(0, 0, 0, 0.25);
+
+    --ff-header: 'Playfair Display', serif;
+    --ff-regular: 'Roboto ', sans-serif;
+
+    --fs-hero-header: 48px;
+    --fs-header: 42px;
+    --fs-sub-header: 22px;
+    --fs-para: 18px;
+    --fs-regular: 14px;
+    --fs-icon: 36px;
+    --fs-small-icon: 24px;
+
+    --fw-200: 200;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fw-bolder: 900;
+
+    --gen-padding: 24px 40px;
+
+    --gen-transition: 0.2s ease-in-out;
+}
+
+.blog-hero-container{
+    height: 100vh;
+    background-image: url('../../../assets/blog-hero-bg-img.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    opacity: 0.9;
+}
+
+.blog-hero-heading{
+    position: absolute;
+    top: 10vw;
+    text-align: center;
+}
+
+.blog-hero-first-line{
+    color: aliceblue;
+    font-size: var(--fs-header);
+    font-weight: var(--fw-regular);
+    text-shadow: black 4px 4px;
+    margin-bottom: 10px;
+    font-weight: var(--fw-bold);
+}
+
+.blog-hero-second-line{
+    color: aliceblue;
+    font-size: var(--fs-sub-header);
+    text-shadow: black 4px 4px;
+    margin-bottom: 3pxpx;
+    font-weight: var(--fw-bold);
+
+
+}
+
+.blog-hero-third-line{
+    color: aliceblue;
+    font-size: var(--fs-hero-header);
+    font-family: var(--ff-header);
+    margin-bottom: 30px;
+    text-shadow: #bc63e9 4px 4px;
+    font-weight: var(--fw-bold);
+
+}
+
+.blog-hero-btn{
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    background-color: var(--clr-accent);
+}
+
+.blog-hero-explore{
+    font-size: var(--fs-sub-header);
+    color: aliceblue;
+    font-weight: var(--fw-bold);
+
+}
+
+.blog-hero-btn:hover{
+    background-color: transparent;
+    border: 2px solid aliceblue;
+    text-shadow: black 4px 4px;
+    transition: 0.3s;
+}

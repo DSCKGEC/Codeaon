@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  font-family: var(--ff-regular);
+}
+
+:root {
+  --clr-main-bg: #fff;
+  --clr-text: #000;
+  --clr-medium-light: #686868;
+  --clr-accent-light: #9900f8;
+  --clr-accent: #7d00c9;
+  --clr-underline: #83a4ff;
+  --clr-box-shadow: rgba(0, 0, 0, 0.25);
+
+  --ff-header: "Playfair Display", serif;
+  --ff-regular: "Roboto ", sans-serif;
+
+  --fs-hero-header: 48px;
+  --fs-header: 42px;
+  --fs-sub-header: 22px;
+  --fs-para: 18px;
+  --fs-regular: 14px;
+  --fs-icon: 36px;
+  --fs-small-icon: 24px;
+
+  --fw-200: 200;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fw-bolder: 900;
+
+  --gen-padding: 24px 40px;
+
+  --gen-transition: 0.2s ease-in-out;
+}
+
+.blog-showcase-sidebar-container {
+  width: 40%;
+  position: absolute;
+  right: 0%;
+}
+
+.blog-sidebar-heading {
+  font-size: var(--fs-header);
+  font-family: var(--ff-header);
+  margin-bottom: 24px;
+  margin-left: 120px;
+}
+
+.blog-sidebar-contents {
+  position: relative;
+}
+
+.blog-sidebar-contents ul {
+  position: absolute;
+  left: 5rem;
+}
+.blog-sidebar-btn {
+  background-color: rgb(100, 43, 233);
+  background: linear-gradient(
+    90deg,
+    rgba(100, 43, 233, 1) 0%,
+    rgba(221, 27, 231, 1) 100%
+  );
+  width: 20vw;
+  padding: 20px 30px;
+  border-radius: 3rem;
+  font-size: var(--fs-para);
+  font-family: var(--ff-regular);
+  color: #fff;
+  margin-bottom: 16px;
+}

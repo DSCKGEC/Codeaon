@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+
+}
+
+:root {
+	--clr-main-bg: #fff;
+	--clr-text: #000;
+	--clr-medium-light: #686868;
+	--clr-accent-light: #9900f8;
+	--clr-accent: #7d00c9;
+	--clr-underline: #83a4ff;
+	--clr-box-shadow: rgba(0, 0, 0, 0.25);
+
+	--ff-header: 'Playfair Display', serif;
+	--ff-regular: 'Roboto ', sans-serif;
+
+	--fs-hero-header: 48px;
+	--fs-header: 42px;
+	--fs-sub-header: 22px;
+	--fs-para: 18px;
+	--fs-regular: 14px;
+	--fs-icon: 36px;
+	--fs-small-icon: 24px;
+
+	--fw-200: 200;
+	--fw-light: 300;
+	--fw-regular: 400;
+	--fw-bold: 700;
+	--fw-bolder: 900;
+
+	--gen-padding: 24px 40px;
+
+	--gen-transition: 0.2s ease-in-out;
+}
+
+body {
+	font-family: var(--ff-regular);
+}
+
+.container-signup-container {
+	align-content: center;
+	background-repeat: no-repeat;
+	background-color: #fff;
+}
+
+.signup-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow-y: hidden;
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+
+}
+
+.screen {
+	background: linear-gradient(90deg, #5D54A4, #7C78B8);
+	position: relative;
+	height: 600px;
+	width: 360px;
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.screen__content {
+	z-index: 1;
+	position: relative;
+	height: 100%;
+	border-radius: 20px;
+}
+
+.screen__background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	-webkit-clip-path: inset(0 0 0 0);
+	clip-path: inset(0 0 0 0);
+}
+
+.screen__background__shape {
+	transform: rotate(45deg);
+	position: absolute;
+}
+
+.screen__background__shape1 {
+	height: 620px;
+	width: 652px;
+	background: #FFF;
+	top: -50px;
+	right: 120px;
+	border-radius: 0 72px 0 0;
+}
+
+.screen__background__shape2 {
+	height: 220px;
+	width: 220px;
+	background: #4e39ec;
+	top: -172px;
+	right: 0;
+	border-radius: 32px;
+}
+
+.screen__background__shape3 {
+	height: 600px;
+	width: 190px;
+	background: linear-gradient(270deg, #5427cf, #6f42c1);
+	top: -24px;
+	right: 0;
+	border-radius: 32px;
+}
+
+.screen__background__shape4 {
+	height: 450px;
+	width: 200px;
+	background: #6f42c1;
+	top: 420px;
+	right: 50px;
+	border-radius: 60px;
+}
+
+.signup {
+	width: 320px;
+	padding: 30px;
+	padding-top: 120px;
+}
+
+.signup__field {
+	padding: 20px 0px;
+	position: relative;
+
+}
+
+.signup__icon {
+	position: absolute;
+	top: 30px;
+	color: #7875B5;
+}
+
+.signup__input-name {
+	border: none;
+	border-bottom: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+	padding-left: 25px;
+	font-weight: 700;
+	width: 90%;
+	transition: .2s;
+}
+
+.signup__input-user {
+	border: none;
+	border-bottom: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+	padding-left: 25px;
+	font-weight: 700;
+	width: 91.5%;
+	transition: .2s;
+}
+
+.signup__input:active,
+.signup__input:focus,
+.signup__input:hover {
+	outline: none;
+	border-bottom-color: #6A679E;
+}
+
+.signup__submit {
+	background: #fff;
+	font-size: 14px;
+	margin-top: 20px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	width: 95%;
+	color: #6f42c1;
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+	cursor: pointer;
+	transition: .2s;
+	justify-content: center;
+}
+
+.signup__submit:active,
+.signup__submit:focus,
+.signup__submit:hover {
+	border-color: #6A679E;
+	outline: none;
+}
+
+.button__icon {
+	font-size: 24px;
+	margin-left: auto;
+	color: #7875B5;
+}
+
+.button-signup__submit {
+	border-radius: 10px;
+}
+
+.fa-user:before {
+	width: 18px;
+}
+
+.new-user {
+	padding-top: 2px;
+	text-decoration: solid;
+	padding-left: 1%;
+}
+
+.new-user a,
+.new-user p{
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+	color: #0000EE;
+}

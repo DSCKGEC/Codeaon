@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  font-family: var(--ff-regular);
+}
+
+:root {
+  --clr-main-bg: #fff;
+  --clr-text: #000;
+  --clr-medium-light: #686868;
+  --clr-accent-light: #9900f8;
+  --clr-accent: #7d00c9;
+  --clr-underline: #83a4ff;
+  --clr-box-shadow: rgba(0, 0, 0, 0.25);
+
+  --ff-header: "Playfair Display", serif;
+  --ff-regular: "Roboto ", sans-serif;
+
+  --fs-hero-header: 48px;
+  --fs-header: 42px;
+  --fs-sub-header: 22px;
+  --fs-para: 18px;
+  --fs-regular: 14px;
+  --fs-icon: 36px;
+  --fs-small-icon: 24px;
+
+  --fw-200: 200;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fw-bolder: 900;
+
+  --gen-padding: 24px 40px;
+
+  --gen-transition: 0.2s ease-in-out;
+}
+
+.blog-showcase-container {
+  padding: 16px 32px 16px 0;
+  width: 60%;
+  margin-left: 23px;
+}
+
+.blog-post-heading {
+  margin: 20px;
+  color: #000;
+  font-size: var(--fs-sub-header);
+  font-family: var(--ff-header);
+  font-weight: var(--fw-bold);
+  text-decoration: none;
+  padding: 16px;
+  display: contents;
+}
+
+.blog1-img {
+  overflow: hidden;
+  position: relative;
+}
+
+.blog1-image {
+  width: 100%;
+  transition: transform 1s ease;
+}
+
+.blog1-image:hover {
+  transform: scale(1.2);
+}
+
+.blog-img-details {
+  position: relative;
+  padding: 1rem 2rem;
+}
+
+.blog-post-details {
+  font-family: var(--ff-regular);
+  font-size: var(--fs-para);
+  color: black;
+
+  margin: 2rem 0;
+}
+
+.blog-post-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #7d00c9;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0%;
+  border-radius: 3rem;
+  left: 15vw;
+  color: white;
+  width: 400px;
+}
+
+.blog-post-info-small {
+  border-radius: 12px;
+  display: flex;
+}
+
+.blog1-category {
+  width: 30%;
+}
+
+.blog-readmore-btn {
+  background: #9900f8;
+
+  border-radius: 30px;
+  font-family: var(--ff-regular);
+  color: #fff;
+  font-size: var(--fs-regular);
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  max-width: max-content;
+}
+
+.blog-readmore-btn:hover {
+  background: #7d00c9;
+}
+
+.blog-post-title {
+  padding: 43px 20px;
+}
+
+.blog-post-info-small:hover {
+  text-shadow: 0 0 3px white;
+  transition: var(--gen-transition);
+}

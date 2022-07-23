@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  font-family: var(--ff-regular);
+}
+
+:root {
+  --clr-main-bg: #fff;
+  --clr-text: #000;
+  --clr-medium-light: #686868;
+  --clr-accent-light: #9900f8;
+  --clr-accent: #7d00c9;
+  --clr-underline: #83a4ff;
+  --clr-box-shadow: rgba(0, 0, 0, 0.25);
+
+  --ff-header: "Playfair Display", serif;
+  --ff-regular: "Roboto ", sans-serif;
+
+  --fs-hero-header: 48px;
+  --fs-header: 42px;
+  --fs-sub-header: 22px;
+  --fs-para: 18px;
+  --fs-regular: 14px;
+  --fs-icon: 36px;
+  --fs-small-icon: 24px;
+
+  --fw-200: 200;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fw-bolder: 900;
+
+  --gen-padding: 24px 40px;
+
+  --gen-transition: 0.2s ease-in-out;
+}
+
+.section-title {
+  padding: var(--gen-padding);
+}
+
+.section-heading {
+  display: flex;
+  justify-content: center;
+  font-size: var(--fs-header);
+  font-family: var(--ff-header);
+  font-weight: var(--fw-bolder);
+  line-height: 6rem;
+}
+
+.feature-heading {
+  color: var(--clr-accent);
+  font-family: var(--ff-header);
+}
+
+.section-para {
+  padding: 19px 120px;
+}
+
+.feature-row {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  justify-items: center;
+  margin: auto;
+}
+
+.feature-card {
+  width: 30%;
+  border-radius: 7px;
+  margin: 20px 10px 10px;
+  background-color: gainsboro;
+  transition: var(--gen-transition);
+}
+
+.feature-card-logo {
+  width: 80px;
+  height: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 149px;
+}
+
+.feature-card-logo i {
+  font-size: var(--fs-icon);
+  height: 3px;
+}
+
+.feature-card-header {
+  text-align: center;
+  padding: var(--gen-padding);
+}
+
+.feature-card-header h1 {
+  font-family: var(--ff-header);
+  font-size: var(--fs-para);
+  font-weight: var(--fw-bold);
+}
+
+.feature-card-body {
+  padding: var(--gen-padding);
+  text-align: center;
+  font-style: 18px;
+}
+
+.feature-card-body p {
+  position: relative;
+  bottom: 29px;
+}
+
+.feature-card:hover {
+  background-color: rgb(241, 241, 241);
+  transform: scale(1.05);
+}
+
+.feature-card:hover i {
+  height: 3px;
+  color: var(--clr-accent);
+}
