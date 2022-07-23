@@ -153,13 +153,14 @@ Create a `.env` file then edit it with your settings. You will need:
 
 > console.log ( " Start contributing for Codeaon " );
 
+<br>
 
 ## Open Source Programs
 
 <table>
 <tr>
  <td align="center">
-<a href="#"><img src="" width=100px height=100px /><br /><sub><b>KGEC Summer Of Code</b></sub></a>
+<a href="https://dscksoc.herokuapp.com/"><img src="https://raw.githubusercontent.com/soujo/codeaon/main/open_source/ksoc-logo.png" width=80px height=100px /><br /><sub><b>KGEC Summer Of Code</b></sub></a>
  </td>
 </tr>
 </table>
