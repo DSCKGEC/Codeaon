@@ -1,0 +1,47 @@
+# .github/workflows/heroku-pull-request.yml
+name: Heroku Pull Request
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+
+jobs:
+  heroku-pull-request:
+    runs-on: ubuntu-latest
+    env:
+      HEROKU_APP_NAME: codeaon-app-pr-${{ github.event.number }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: ${{ github.event.action == 'closed' && 1 || 0 }}
+          ref: ${{ github.event.action != 'closed' && github.head_ref || '' }}
+
+      - name: Login to Heroku
+        uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+          heroku_email: ${{ secrets.HEROKU_EMAIL }}
+          heroku_app_name: ${{ env.HEROKU_APP_NAME }}
+          justlogin: true
+
+      - name: Create Heroku app
+        if: github.event.action == 'opened'
+        run: heroku apps:create ${{ env.HEROKU_APP_NAME }} 
+
+      - name: Add Heroku remote
+        run: heroku git:remote --app=${{ env.HEROKU_APP_NAME }}
+
+      - name: Push to Heroku
+        run: git push heroku ${{ github.head_ref }}:master --force
+
+      - name: Add comment to PR
+        if: github.event.action == 'opened'
+        run: |
+          gh pr comment ${{ github.event.number }} --body 'Deploy Preview: https://${{ env.HEROKU_APP_NAME }}.herokuapp.com'
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}
+
+      - name: Destroy Heroku app
+        if: github.event.action == 'closed'
+        run: heroku apps:destroy --app=${{ env.HEROKU_APP_NAME }} --confirm=${{ env.HEROKU_APP_NAME }}
