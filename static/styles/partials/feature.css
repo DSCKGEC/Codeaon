@@ -60,7 +60,7 @@ body {
 }
 
 .section-para {
-  padding: 19px 120px;
+  padding: 19px 170px;
 }
 
 .feature-row {
@@ -88,7 +88,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 7px 149px;
+  padding: 7px 60px;
 }
 
 .feature-card-logo i {
@@ -105,6 +105,8 @@ body {
   font-family: var(--ff-header);
   font-size: var(--fs-para);
   font-weight: var(--fw-bold);
+  text-align: left;
+
 }
 
 .feature-card-body {
@@ -116,6 +118,7 @@ body {
 .feature-card-body p {
   position: relative;
   bottom: 29px;
+  text-align: left;
 }
 
 .feature-card:hover {
