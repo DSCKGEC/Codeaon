@@ -18,16 +18,10 @@ app.use(urlencoded({ extended: false }));
 app.set("view engine", "ejs");
 app.set("views", views_path);
 
+//* Landing page 
+
 app.get("/", (req, res) => {
     res.status(200).render("index.ejs");
-});
-
-app.get("/login", (req, res) => {
-    res.status(200).render("login.ejs");
-});
-
-app.get("/signup", (req, res) => {
-    res.status(200).render("signup.ejs");
 });
 
 app.get("/contactUs", (req, res) => {
@@ -37,6 +31,18 @@ app.get("/contactUs", (req, res) => {
 app.get("/blogs", (req, res) => {
     res.status(200).render("blog.ejs");
 });
+
+
+//* User Routers
+
+
+const userRegistrationRouter = require("../src/routes/user.registration.route.js");
+app.use("/user", userRegistrationRouter);
+
+const userLoginRouter = require("../src/routes/user.login.route.js");
+app.use("/user", userLoginRouter);
+
+
 
 
 
