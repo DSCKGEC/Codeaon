@@ -14,7 +14,7 @@
       <div class="container login-container">
         <div class="screen">
           <div class="screen__content">
-              <form class="login">
+              <form class="login" action="/user/login" method="POST">
                 
                   <div class="login__field">
                       <i class="login__icon fas fa-user"></i>
@@ -28,10 +28,10 @@
                       <input type="submit" class="button login__submit" value="login">
                   </div>
                   <div class="new-user">
-                      <a href="#">Forgot Password?</a>
+                      <a href="/user/forgotPassword">Forgot Password?</a>
                       
                       <br>
-                      <a href="/signup">Sign Up</a>
+                      <a href="/user/signup">Sign Up</a>
                   </div>
                  
               </form>
